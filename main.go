@@ -13,11 +13,11 @@ func main() {
 	engine.LoadHTMLGlob("templates/*")
 
 	engine.GET("/button", func(c *gin.Context) {
-		c.HTML(http.StatusOK, "button.html", gin.H{"Title": "Button"})
+		c.HTML(http.StatusOK, "button.html", gin.H{"Title": "Button风格"})
 	})
 
 	engine.GET("/form", func(c *gin.Context) {
-		c.HTML(http.StatusOK, "form.html", gin.H{"Title": "Form"})
+		c.HTML(http.StatusOK, "form.html", gin.H{"Title": "Form风格"})
 	})
 
 	engine.POST("/form", func(c *gin.Context) {
